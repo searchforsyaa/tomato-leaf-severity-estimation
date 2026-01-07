@@ -1,0 +1,15 @@
+# Core Deep Learning
+torch>=2.0
+torchvision>=0.15
+
+# Computer Vision
+opencv-python>=4.8
+Pillow>=9.0
+
+# Scientific Computing
+numpy>=1.23
+matplotlib>=3.7
+tqdm>=4.65
+
+# Annotation Tool
+labelme>=5.3
