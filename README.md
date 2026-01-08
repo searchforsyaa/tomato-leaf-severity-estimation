@@ -8,24 +8,6 @@
 Proyek ini mengembangkan pipeline *computer vision* end-to-end untuk **mengestimasi tingkat keparahan penyakit Early Blight pada daun tomat** berbasis citra RGB.  
 Berbeda dari pendekatan klasifikasi sederhana, proyek ini memformulasikan masalah sebagai **dua tahap segmentasi semantik**, sehingga menghasilkan **estimasi severity berbasis rasio area penyakit terhadap area daun**.
 
-Pendekatan ini lebih selaras dengan kebutuhan analisis agrikultur dan plant pathology, di mana **lokasi dan proporsi penyakit lebih penting daripada label kelas tunggal**.
-
----
-
-## Tujuan
-
-- Melakukan segmentasi **daun** dan **area penyakit** secara terpisah
-- Mengestimasi **disease severity** sebagai:
-  
-  \[
-  Severity = \frac{Area\ Penyakit}{Area\ Daun}
-  \]
-
-- Mengevaluasi model tidak hanya dengan *loss*, tetapi juga:
-  - evaluasi visual
-  - korelasi severity
-  - analisis *failure cases*
-
 ---
 
 ## Metodologi
@@ -51,6 +33,7 @@ Pendekatan dua tahap ini bertujuan mengurangi *false positive* penyakit di area 
 ---
 
 ## Struktur Repository
+```
 learn-comvis/
 ├── checkpoints/ # Model terlatih (.pth)
 ├── data/ # Dataset, mask, dan split
@@ -58,7 +41,7 @@ learn-comvis/
 ├── src/ # Implementasi pipeline
 ├── .venv/ # Virtual environment
 └── README.md
-
+```
 ---
 
 
